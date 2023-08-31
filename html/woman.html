@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+      integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="../css/index.css" />
+    <!-- <link rel="stylesheet" href="../css/list.css" /> -->
+    <title>상의(WOMAN) | MUSINSA</title>
+  </head>
+  <body>
+    <div class="header"></div>
+    <section id="List">
+      <div class="title">
+        <h2>여성상의</h2>
+        <ul class="subcate">
+          <li class="on"><a href="javadcript:;">전체</a></li>
+          <li><a href="javadcript:;">나시</a></li>
+          <li><a href="javadcript:;">반팔</a></li>
+          <li><a href="javadcript:;">블라우스</a></li>
+          <li><a href="javadcript:;">니트</a></li>
+        </ul>
+      </div>
+      <div class="list">
+        <!-- <ul>
+          <li>
+            <a href="#"
+              ><img src="/img/json/man_top/man1.jpg" alt="제품명" />
+              <div class="info">
+                <p class="brand">RADINEO</p>
+                <p class="name">[논기모] 킥 맨투맨 민트</p>
+                <p class="price">65000</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/img/json/man_top/man2.jpg" alt="제품명" />
+              <div class="brand">COVERNAT</div>
+              <div class="name">코듀로이 오버사이즈 셔츠 네이비</div>
+              <div class="price">99000</div></a
+            >
+          </li>
+        </ul> -->
+      </div>
+    </section>
+    <div class="footer"></div>
+    <script>
+      let data = "";
+      $.ajax({
+        type: "GET",
+        url: "../js/data.json",
+        dataType: "json",
+        success: function (rdata) {
+          console.log(rdata.woman);
+          data = rdata.woman;
+          // console.log(data);
+          usedata("전체");
+        },
+        error: function (xhr) {
+          alert(xhr.status + "/" + xhr.errorText);
+        },
+      });
+    </script>
+    <script src="../js/common.js"></script>
+    <script src="../js/list.js"></script>
+  </body>
+</html>

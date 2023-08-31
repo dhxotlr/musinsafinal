@@ -1,0 +1,116 @@
+/* @charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "AppleSDGothicNeo", "Noto Sans KR", sans-serif;
+}
+table {
+  border-collapse: collapse;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+.row {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+button {
+  background: none;
+  border: none;
+}
+a {
+  color: inherit;
+}
+.won::after {
+  content: "원";
+}
+
+#buyBox {
+  text-align: center;
+  margin: 30px 0;
+}
+#buyBox .complete {
+  padding: 50px 0;
+}
+#buyBox .complete h5 {
+  padding: 10px 0;
+  font-size: 20px;
+}
+#buyBox .complete h5 span {
+  text-decoration: underline;
+  color: #6d58b3;
+}
+#buyBox .complete h1 {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+#buyBox table {
+  width: 100%;
+}
+#buyBox .order_prd {
+  border-top: 3px solid #444;
+}
+#buyBox .order_prd col:nth-child(1) {
+  width: 150px;
+}
+#buyBox .order_prd col:nth-child(2) {
+  width: auto;
+}
+#buyBox .order_prd col:nth-child(3) {
+  width: 120px;
+}
+#buyBox .order_prd col:nth-child(4) {
+  width: 170px;
+}
+#buyBox .order_prd col:nth-child(5) {
+  width: 170px;
+}
+#buyBox .order_prd caption {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 10px;
+}
+#buyBox .order_prd thead th {
+  padding: 15px 0;
+  font-size: 18px;
+  border-bottom: 2px solid #666;
+}
+#buyBox .order_prd tbody td {
+  height: 150px;
+  border-bottom: 2px solid #999;
+}
+#buyBox .order_prd tbody td img {
+  height: 100%;
+  vertical-align: middle;
+  padding: 5px 0;
+}
+#buyBox .order_prd tbody .name {
+  text-align: left;
+  text-indent: 5px;
+}
+
+#buyBox button a {
+  display: inline-block;
+  margin: 30px 10px;
+  width: 285px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+#buyBox .order_info a {
+  background: #fff;
+  color: #000;
+} */

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+      integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="../js/" />
+  </head>
+  <body>
+    <div class="header"></div>
+    <section id="join">
+      <form action="#" method="post" name="joinForm" autocomplete="off">
+        <fieldset class="fieldset">
+          <legend>회원가입 입력양식</legend>
+          <div class="join-title">
+            <h2>JOIN MEMBER</h2>
+            <p class="pilsoo">필수 입력 항목</p>
+          </div>
+          <div class="join-member">
+            <strong>회원정보를 입력해주세요 </strong>
+            <ul class="join-depth1">
+              <li class="join-main">
+                <label for="userid" class="pilsoo">아이디</label>
+              </li>
+              <li>
+                <div class="join-sub">
+                  <input
+                    type="text"
+                    id="userid"
+                    placeholder=" 아이디를 입력하세요"
+                  />
+                  <button type="button" class="checkidbtn">중복확인</button>
+                </div>
+              </li>
+              <li class="join-main">
+                <label for="userpw" class="pilsoo">비밀번호</label>
+              </li>
+              <li>
+                <div class="join-sub">
+                  <input
+                    type="password"
+                    id="userpw"
+                    placeholder=" 비밀번호를 입력하세요"
+                  />
+                </div>
+              </li>
+              <li class="join-main">
+                <label for="userpw2" class="pilsoo">비밀번호 확인</label>
+              </li>
+              <li>
+                <div class="join-sub samepw">
+                  <input
+                    type="password"
+                    id="userpw2"
+                    placeholder=" 비밀번호를 확인하세요"
+                  />
+                  <span></span>
+                </div>
+              </li>
+              <li class="join-main">
+                <label for="join-name" class="pilsoo">이름</label>
+              </li>
+              <li>
+                <div class="join-sub">
+                  <input
+                    type="text"
+                    id="join-name"
+                    placeholder=" 실명을 입력하세요"
+                  />
+                </div>
+              </li>
+              <li class="join-main">
+                <label for="userhp" class="pilsoo">휴대폰 번호</label>
+              </li>
+              <li>
+                <div class="join-sub">
+                  <input
+                    type="text"
+                    id="userhp"
+                    placeholder=" '-' 구분없이 입력"
+                  />
+                  <button type="button" class="randomkeybtn">
+                    인증번호 전송
+                  </button>
+                </div>
+              </li>
+              <li>
+                <div class="join-main">
+                  <label for="userhpaw" class="pilsoo">인증 번호</label>
+                </div>
+              </li>
+              <li>
+                <div class="join-sub">
+                  <input
+                    type="text"
+                    id="userhpaw"
+                    placeholder="인증번호를 입력하세요"
+                  />
+                  <button type="button" class="randomkeysamebtn">
+                    인증번호 확인
+                  </button>
+                </div>
+              </li>
+
+              <li class="join-birth">
+                <label for="userbirth" class="pilsoo">생년월일</label>
+              </li>
+              <li>
+                <div class="join-sub">
+                  <input type="text" id="userbirth" placeholder=" 8자리 입력" />
+                </div>
+              </li>
+              <li class="join-main">
+                <label for="usergender" class="pilsoo">성별</label>
+              </li>
+              <li>
+                <div class="join-gender">
+                  <input type="radio" id="join-man" name="gender" />
+                  <label for="join-man">남</label>
+                  <input type="radio" id="join-woman" name="gender" />
+                  <label for="join-woman">여</label>
+                </div>
+              </li>
+              <div class="join-start">
+                <button type="submit">MUSINSA JOIN</button>
+              </div>
+            </ul>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+    <div class="footer"></div>
+    <script src="../js/common.js"></script>
+
+    <!-- <script src="../js/login.js"></script> -->
+    <script src="../js/join.js"></script>
+    <script></script>
+  </body>
+</html>
